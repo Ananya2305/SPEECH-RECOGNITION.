@@ -17,7 +17,7 @@ recognition.onresult = function(event){
     console.log(event);
     var content = event.results[0][0].transcript;
     document.getElementById("status").innerHTML="SPEACH HAS BEEN RECOGNISED AS " + content;
-    if(content=="Circle"){
+    if(content=="circle"){
         x = Math.floor(Math.random()*900);
         y = Math.floor(Math.random()*600); 
         document.getElementById("status").innerHTML = "STARTED DRAWING CIRCLE";
@@ -25,7 +25,7 @@ recognition.onresult = function(event){
 
         
     }
-    if(content=="Rectangle"){
+    if(content=="rectangle"){
         x = Math.floor(Math.random()*900);
         y = Math.floor(Math.random()*600); 
         document.getElementById("status").innerHTML = "STARTED DRAWING RECTANGLE";
